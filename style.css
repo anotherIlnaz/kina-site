@@ -1,0 +1,90 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  all: unset;
+  border: 2px solid var(--main-color) ;
+  padding: 0px 15px;
+  height: 30px;
+  border-radius: 5px 0px 0 5px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(36, 33, 45);
+  color: rgb(208, 208, 206);
+  --main-color: rgb(255, 183, 0);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 45px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.229);
+}
+
+.siteName {
+  font-size: 22px;
+  font-family: "Send Flowers", cursive;
+}
+
+#btnSearch {
+  all: unset;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  height: 30px;
+  margin-left: -5px;
+  padding: 0 15px;
+  color: black;
+}
+
+.films-list {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.film-card-preview {
+  width: 240px;
+  height: 360px;
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.film-card {
+  padding: 25px;
+  max-width: 260px ;
+}
+.film-card:hover{
+    cursor: pointer;
+}
+/* .film-card:active{
+    background-color: #fff;
+} */
+
+
+.film-card-raiting {
+  background-color: rgba(0, 0, 0, 0.559);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  border: 2px solid rgba(251, 54, 0, 0.919);
+}
+
+.film-card-name{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.film-card-genre{
+    color: var(--main-color)
+}
