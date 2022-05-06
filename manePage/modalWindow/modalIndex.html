@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>modal window</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="media">
+        <div class="film-picture">
+          <img
+            class="pictureImg"
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/3ddc0946-5e53-4f7a-b355-cd42c2280f9e/300x450"
+            alt="Обложка фильма!"
+          />
+        </div>
+
+        <div class="film-treiler">
+          <video width="300" height="200" controls="controls">
+            <source
+              src="https://avatars.mds.yandex.net/get-kino-vod-films-gallery/1668876/4a99a3e7bcbc913398bc6de7066b8baa/100x64_3"
+            />
+          </video>
+        </div>
+      </div>
+      <div class="exit"><img src="/manePage/assets/imdb.svg"/></div>
+      <div class="textInformation">
+        <div class="informationHeader">
+          <div class="film-name">
+            <h2 class="name">Название фильма</h2>
+            <h4 class="engName">Nazvanie filma</h4>
+          </div>
+
+          <div class="scores">
+            <div class="imdbScore">
+              <div class="imdbLogo">
+                <img id="imdbLogo" src="src/imdb.svg" alt="imdbLogo" />
+              </div>
+              <div class="imbdScoreValue">8.9</div>
+            </div>
+            <div class="kpScore">
+              <div class="kpLogo">
+                <img id="kpLogo" src="src/KinopoiskLogo.svg" alt="kpLogo" />
+              </div>
+              <div class="kpScoreValue">8.7</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filmInformationBlock">
+          <div class="title">
+            <h2 class="titleValue">О фильме</h2>
+          </div>
+
+          <div class="filmInformation">
+            <div class="info dark prodYear">Год производства</div>
+            <div class="info dark prodYear-value">2022</div>
+
+            <div class="info dark genre">Жанр</div>
+            <div class="info dark genre-value">боевик</div>
+
+            <div class="info dark producer">Режиссер</div>
+            <div class="info dark producer-value">Имя режиссера</div>
+
+            <div class="info dark budget">Бюджет</div>
+            <div class="info dark budget-value">$120 000 000</div>
+
+            <div class="info dark premiere">Премьера в Росcии</div>
+            <div class="info dark premiere-value">Дата</div>
+
+            <div class="info dark length">Время</div>
+            <div class="info dark length-value">115 мин.</div>
+          </div>
+          <div class="shortDescription">
+            <div class="descTitle">Краткое описание</div>
+            <div class="descValue">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quo
+              sed architecto ad reprehenderit sunt laudantium, ullam velit quas
+              mollitia delectus odio commodi recusandae vitae libero error. Ad, illo
+              quas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

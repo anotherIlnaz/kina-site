@@ -1,10 +1,11 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
 input {
   all: unset;
-  border: 2px solid var(--main-color) ;
+  border: 2px solid var(--main-color);
   padding: 0px 15px;
   height: 30px;
   border-radius: 5px 0px 0 5px;
@@ -27,9 +28,16 @@ header {
 
 .siteName {
   font-size: 22px;
-  font-family: "Send Flowers", cursive;
+  font-family: italic;
+  user-select: none;
 }
-
+.siteName:hover {
+  filter: brightness(200%);
+  cursor: pointer;
+}
+.siteName:active{
+  filter: brightness(70%);
+}
 #btnSearch {
   all: unset;
   background-color: var(--main-color);
@@ -39,7 +47,17 @@ header {
   margin-left: -5px;
   padding: 0 15px;
   color: black;
+  user-select: none;
 }
+#btnSearch:hover{
+  filter: brightness(130%);
+  cursor: pointer;
+}
+#btnSearch:active{
+  filter: brightness(70%);
+}
+
+
 
 .films-list {
   padding: 25px;
@@ -59,15 +77,15 @@ header {
 
 .film-card {
   padding: 25px;
-  max-width: 260px ;
+  max-width: 260px;
+  transition: 0.2s;
 }
-.film-card:hover{
-    cursor: pointer;
-}
-/* .film-card:active{
-    background-color: #fff;
-} */
 
+.film-card:hover {
+  cursor: pointer;
+  filter: brightness(125%);
+  transform: scale(1.05);
+}
 
 .film-card-raiting {
   background-color: rgba(0, 0, 0, 0.559);
@@ -78,13 +96,36 @@ header {
   padding: 6px;
   border-radius: 50%;
   border: 2px solid rgba(251, 54, 0, 0.919);
+  user-select: none;
 }
 
-.film-card-name{
-    font-size: 18px;
-    margin-top: 10px;
+.film-card-name {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.film-card-name:hover {
+  cursor: pointer;
 }
 
-.film-card-genre{
-    color: var(--main-color)
+.film-card-genre {
+  color: var(--main-color);
+  user-select: none;
+}
+
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  display: flex;
+}
+
+.btnPag{
+  font-size: 20px;
+  padding: 7px ;
+}
+.btnPag:hover{
+  color: var(--main-color);
 }

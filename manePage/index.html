@@ -11,10 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./modalWindow/modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Send+Flowers&display=swap"
       rel="stylesheet"
     />
     <title>Сайт для выбора кино</title>
@@ -25,25 +26,26 @@
         Сайт для поиска<span style="color: rgb(255, 183, 0)"> кина</span>
       </div>
       <div class="search">
-        <input type="text" placeholder="Поиск" />
+        <input id="search-input" type="text" placeholder="Поиск" />
         <button id="btnSearch" type="submit">Искать</button>
       </div>
     </header>
 
-    <div class="films-list">
-        <!-- <div class="film-card">
-            <div class="film-card-preview" style="background-image: url(https://kinopoiskapiunofficial.tech/images/posters/kp_small/301.jpg);">
-                <div class="film-card-raiting">9.9</div>
-            </div>
-            <div class="film-card-name">Матрыца</div>
-            <div class="film-card-genre">фантастика</div>
-        </div> -->
-        
+    <div class="films-list"></div>
+
+    <div class="modalContainer"></div>
+
+    <div class="pagination">
+      <div class="buttons">
+        <div class="btnPag arrow"> < </div>
+        <div class="btnPag number"> 1 </div>
+        <div class="btnPag number"> 2 </div>
+        <div class="btnPag number"> 3 </div>
+        <div class="btnPag number"> 4 </div>
+        <div class="btnPag number"> 5 </div>
+        <div class="btnPag arrow"> > </div>
+      </div>
     </div>
-
-
-
     <script src="app.js"></script>
   </body>
-
 </html>
