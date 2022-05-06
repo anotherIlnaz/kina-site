@@ -23,9 +23,7 @@ function showFilms(data) {
       <div class="film-card-preview" style="background-image: url(${
         film.posterUrlPreview
       });">
-        <div class="film-card-raiting" style="border-color: ${getRaitingColor(
-          Number(film.rating)
-        )}">${film.rating}</div>
+        <div class="film-card-raiting" style="border-color: ${getRaitingColor(Number(film.rating))}">${film.rating}</div>
       </div>
       <div class="film-card-name">${film.nameRu}</div>
       <div class="film-card-genre">${film.genres
@@ -41,12 +39,9 @@ function showFilms(data) {
     filmsListElement.appendChild(filmsElement);
 
     // console.log(film);
-
-     
-
     // чем film отличается от data.films.film ?
   });
-}
+};
 
 function loadTop100() {
   request(
